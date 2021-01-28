@@ -1,9 +1,12 @@
 Consignes :
 
-- Aficher le jour de la semaine sous forme textuelle en utilisant date() dans le script index.php ( lisez bien la doc sur php.net )
-- A la suite, afficher en utilisant date(), la date suivante : "2018.12.10" ( celle ci doit apparaitre exactement de cette
+- Aficher le jour de la semaine sous forme textuelle en utilisant date() dans le script index.
+php ( lisez bien la doc sur php.net )
+- A la suite, afficher en utilisant date(), la date suivante : "2018.12.10"
+ ( celle ci doit apparaitre exactement de cette
 façon )
-- A la suite, afficher en utilisant date(), l'heure suivante : "11:35:07" ( celle ci doit apparaitre exactement de cette
+- A la suite, afficher en utilisant date(), l'heure suivante : "11:35:07" 
+( celle ci doit apparaitre exactement de cette
 façon )
 
 
@@ -11,14 +14,16 @@ façon )
 
 Théorie :
 
-PHP permet de créer ou lire des dates, contrairement à javascript, le référentiel utilisé par défaut sera l'heure locale
+PHP permet de créer ou lire des dates, contrairement à javascript, le référentiel 
+utilisé par défaut sera l'heure locale
  du serveur où PHP est éxécuté et non pas l'heure locale du visiteur.
 
 - La fonction date()
 
 La syntaxe est la suivante : date(format,timestamp)
 
-Si le parametre timestamp n'est pas précisé, la date retournée sera l'heure et le jour du serveur.
+Si le parametre timestamp n'est pas précisé, la date retournée sera l'heure et le 
+jour du serveur.
 
 Exemple :
 
@@ -27,13 +32,15 @@ $today = date("j/m/Y");
 la variable today aura pour valeur le jour/le mois/l'année
 A la date d'écriture de l'exercice : 10/12/2018
 
-Dans l'exemple, le caractere "/" est utilisé pour séparer les différentes valeurs, j'aurais pu utiliser "-" ou d'autres
+Dans l'exemple, le caractere "/" est utilisé pour séparer les différentes valeurs, 
+j'aurais pu utiliser "-" ou d'autres
 caracteres.
 
 
 - Timezone :
 
-Si vous souhaitez obtenir la date courante pour un autre fuseau horaire, vous pouvez utiliser la fonction
+Si vous souhaitez obtenir la date courante pour un autre fuseau horaire,
+ vous pouvez utiliser la fonction
 date_default_timezone_set()
 
 Exemple :
@@ -41,7 +48,8 @@ Exemple :
 date_default_timezone_set("America/New_York");
 $heure = date("h:i:sa");
 
-La variable heure aura pour valeur l'heure,les minutes et les secondes au moment de l'éxécution du script pour le fuseau
+La variable heure aura pour valeur l'heure,les minutes et les secondes au
+ moment de l'éxécution du script pour le fuseau
 horaire de New york aux etats-unis
 
 
